@@ -6,7 +6,7 @@
         <input
           v-if="!destinationPoint"
           v-model="query"
-          v-on:keyup="queryDestinations"/>
+          v-on:change="queryDepartures"
         <div
           v-else
           class="destination-input--title--choice-box"

@@ -6,7 +6,7 @@
         <input
           v-if="!departurePoint"
           v-model="query"
-          v-on:keyup="queryDepartures"
+          v-on:change="queryDepartures"
           />
         <div
           v-else
