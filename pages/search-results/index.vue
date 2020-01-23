@@ -34,8 +34,8 @@ export default {
         return iframeData
       } else {
         let iframeDataKeys = Object.keys(iframeData)
-        let mode = this.$isDev ? '.test' : ''
-        let deepUrl = `http://citrusholidays${mode}.travelflow.co.uk/directsearch.asp?bn=0007&SearchType=AIR`
+        let mode = this.$isDev ? 'http://citrusholidays.test' : 'https://citrusholidays'
+        let deepUrl = `${mode}.travelflow.co.uk/directsearch.asp?bn=0007&SearchType=AIR`
         for(let key in iframeDataKeys){
           let property = iframeDataKeys[key]
           deepUrl = `${deepUrl}&${property}=${iframeData[property]}`
