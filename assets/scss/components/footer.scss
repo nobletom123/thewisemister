@@ -1,0 +1,65 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #7544a0;
+  width: 100vw;
+  align-items: center;
+  font-family: 'ralewayregular';
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+
+      img {
+        max-width: 10rem;
+      }
+
+    }
+
+    &--images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1;
+      height: 20rem;
+      text-align: center;
+
+      div {
+        max-width: 4rem;
+      }
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  &__link-blocks {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+
+    &--block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      a {
+        color: #7544a0;
+
+        &:hover, &.nuxt-link-exact-active  {
+          color: orange;
+        }
+      }
+    }
+  }
+}

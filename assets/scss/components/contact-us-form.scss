@@ -1,0 +1,31 @@
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 30rem;
+
+  @include respond(phone){
+    max-width: 60vw;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    background-color: rgb(242, 82, 82);
+    padding: 0.3rem 0.7rem;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  textarea {
+    margin: 2rem 0;
+    background-color: #f57575;
+    padding: 1.4rem;
+    height: 11rem;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    resize: none;
+  }
+}

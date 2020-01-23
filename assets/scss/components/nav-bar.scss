@@ -1,0 +1,134 @@
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  width: 100vw;
+  align-items: center;
+  height: $nav-bar-height;
+  position: relative;
+  padding: 0.3rem 0;
+  font-family: ralewayregular;
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+
+    &--image {
+      align-self: flex-start;
+    }
+
+    &--toggle {
+      display: none;
+    }
+  }
+
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    align-self: flex-end;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0.4rem;
+
+    * {
+      font-size: 110%;
+      color: purple;
+      transition: 0.1s;
+    }
+
+    a {
+      &:hover, &.nuxt-link-exact-active {
+        color: orange;
+      }
+    }
+  }
+
+  @include respond(tab-land){
+    flex-direction: column;
+    height: auto;
+
+    &__head--image {
+      padding-right: 1rem 3rem;
+      justify-content: flex-start;
+    }
+
+    &__menu {
+      * {
+        padding: 5px 10px;
+      }
+
+    }
+  }
+
+  @include respond(phone){
+
+    flex-direction: column;
+    height: auto;
+
+    &__head {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &--image {
+        align-self: flex-start;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        height: 100% !important;
+        margin-top: 0.7rem;
+      }
+
+      &--toggle {
+        padding: 0.25rem;
+        display: flex;
+        border: 1px solid lightgrey;
+        width: auto;
+        border-radius: 8px;
+        font-size: 2rem;
+        background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+        color: lightgrey;
+        cursor: pointer;
+        align-self: flex-end;
+        transition: 0.3s;
+        margin: 0.3rem;
+
+        &:hover, &.active {
+          background-image: linear-gradient(to bottom, #f8f8f8 0%, #grey 100%);
+          color: grey;
+        }
+      }
+    }
+
+    &__menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      top: 100%;
+      transform-origin:top;
+      animation-name: expandDownwards;
+      animation-duration: 0.6s;
+
+      * {
+        padding: 10px 5px;
+      }
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

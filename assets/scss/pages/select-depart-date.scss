@@ -1,0 +1,28 @@
+.departure-dates-page {
+  background-color: rgb(119, 188, 32);
+
+  &--journey-type-options {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+
+      * {
+        margin: 0 4px;
+      }
+
+    }
+  }
+
+  &--journey-date-pickers {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin: 10px;
+    }
+  }
+}

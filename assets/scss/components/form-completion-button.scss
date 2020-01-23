@@ -1,0 +1,37 @@
+.form-completion-button {
+  border: 0 none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "DomaineDisplayBlackItalic";
+  font-size: 24px;
+  padding: 6px 25px;
+  display: inline-block;
+  transition: 0.2s;
+  background-color: grey;
+
+  &.active {
+    cursor: pointer;
+
+    &.who-is-going-btn {
+      background-color: #3ebaa8;
+      &:hover {
+        background-color: #3ea095;
+      }
+    }
+
+    &.select-depart-date-btn {
+      background-color: #d14242;
+      &:hover {
+        background-color: darkred;
+      }
+    }
+
+    &.destinations-btn {
+      background-color: #8cce2e;
+      width: 120px;
+      &:hover {
+        background-color: darkgreen;
+      }
+    }
+  }
+}

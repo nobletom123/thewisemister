@@ -1,0 +1,115 @@
+.form-completion-title {
+  font-family: 'ralewayextrabold';
+  color: #FFF;
+  font-size: 36px;
+}
+
+.error-message {
+  font-family: 'ralewayextrabold';
+  color: #FFF;
+  font-size: 1rem;
+  animation-name: fadeInFromBottom;
+  animation-duration: 0.5s;
+}
+
+.form-title-medium {
+  font-family: "DomaineDisplayBlackItalic";
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.form-title-small {
+  font-family: "DomaineDisplayBlackItalic";
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.descriptive-text-title {
+  font-family: 'ralewayextrabold';
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFF;
+
+  @include respond(phone){
+    text-align: center;
+  }
+}
+
+.descriptive-text-body {
+  font-family: 'ralewayextrabold';
+  color: #FFF;
+
+  @include respond(phone){
+    text-align: center;
+  }
+}
+
+.descriptive-text-small-title {
+  font-family: 'ralewayextrabold';
+  font-size: 18px;
+  color: #FFF;
+
+  @include respond(phone){
+    text-align: center;
+  }
+}
+
+.descriptive-text-information {
+  font-family: 'ralewayextrabold';
+  font-size: 16px;
+  color: #FFF;
+
+  @include respond(phone){
+    text-align: center;
+  }
+}
+
+.descriptive-text-list {
+  font-family: 'ralewayextrabold';
+  font-size: 16px;
+  color: #FFF;
+
+  li {
+    margin-left: 2.5rem;
+    list-style: disc;
+  }
+}
+
+.descriptive-text-list-deductive {
+  font-family: 'ralewayextrabold';
+  font-size: 16px;
+  color: #FFF;
+
+  li {
+    margin-left: 2.5rem;
+    list-style: number;
+  }
+}
+
+@font-face {
+  font-family: 'ralewayextrabold';
+  src: url('~assets/fonts/raleway-extrabold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/raleway-extrabold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('~assets/fonts/raleway-extrabold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('~assets/fonts/raleway-extrabold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/raleway-extrabold-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'DomaineDisplayBlackItalic';
+  src: url('~assets/fonts/DomaineDisplayBlackItalic.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/DomaineDisplayBlackItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('~assets/fonts/DomaineDisplayBlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/DomaineDisplayBlackItalic.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('~assets/fonts/raleway-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('~assets/fonts/raleway-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('~assets/fonts/raleway-webfont.woff2') format('woff'), /* Pretty Modern Browsers */
+       url('~assets/fonts/raleway-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('~assets/fonts/raleway-webfont.svg') format('svg'); /* Legacy i */
+}

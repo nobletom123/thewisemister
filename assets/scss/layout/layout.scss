@@ -1,0 +1,47 @@
+.input-fields-vertical {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  width: 100vw;
+
+  &.who-is-going-page {
+    background-color: $who-is-going-page-background;
+    justify-content: flex-start;
+    padding-top: 145px;
+
+    @include respond(phone){
+      padding-top: 10vh;
+    }
+  }
+
+  &.home-page {
+    background-color: $home-page-background;
+    padding-bottom: 145px;
+  }
+
+  &.departure-dates-page {
+    background-color: $departure-date-page-background;
+    padding-top: 2rem;
+
+    @include respond(phone){
+      padding-top: 10vh;
+    }
+  }
+}
+
+.info-page-container {
+  text-align: left;
+}

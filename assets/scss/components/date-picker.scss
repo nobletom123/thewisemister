@@ -1,0 +1,16 @@
+.date-picker {
+  display: flex;
+  flex-direction: row;
+
+  @include respond(phone){
+    flex-direction: column;
+  }
+
+  &__calendar-container {
+    margin: 0 2rem;
+
+    @include respond(phone){
+      margin: 1rem 0;
+    }
+  }
+}

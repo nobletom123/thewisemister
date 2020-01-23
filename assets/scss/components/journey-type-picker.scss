@@ -1,0 +1,50 @@
+.journey-type-picker {
+  display: flex;
+  flex-direction: row;
+
+  &__selector {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: 0.4s;
+
+    &:hover {
+      transform: translateY(-0.3rem) scale(1.1);
+    }
+
+    &--title {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    &--button {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: solid 0.2rem white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 0.4rem;
+
+      &-dot {
+        opacity: 0;
+        transition: 0.6s;
+        width: 0.9rem;
+        height: 0.9rem;
+        border-radius: 50%;
+        background-color: white;
+
+        &.active, &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}

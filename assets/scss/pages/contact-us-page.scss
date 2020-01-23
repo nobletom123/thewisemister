@@ -1,0 +1,57 @@
+.contact-us-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+
+  &__body {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(242, 82, 82);
+
+    * {
+      margin: 1rem 0;
+    }
+  }
+
+  p {
+    max-width: 40rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fdb913;
+    padding: 2rem;
+    padding: 2rem;
+    flex: 1;
+    width: 100%;
+
+    @include respond(phone){
+      flex-direction: column;
+      &--section {
+        padding: 3rem;
+      }
+    }
+
+    &--section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      h1,h3,div {
+        margin: 1rem 0;
+      }
+
+    }
+  }
+}

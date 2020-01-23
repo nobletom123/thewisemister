@@ -1,0 +1,41 @@
+.passenger-picker {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  width: 200px;
+
+  &--buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    &-icon {
+      margin: 5px;
+      background-color: $who-is-going-page-background;
+      font-size: 20px;
+      width: 20px;
+      text-align: center;
+      color: white;
+      transition: 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        color: blue;
+      }
+
+      &.inactive {
+        color: lightgrey;
+      }
+    }
+  }
+
+  &--info {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+  }
+
+}

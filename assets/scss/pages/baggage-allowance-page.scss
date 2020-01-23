@@ -1,0 +1,12 @@
+.baggage-allowance-page {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  background-color: rgb(242, 82, 82);
+  justify-content: flex-start;
+  text-align: left;
+
+  * {
+    margin-bottom: 1rem;
+  }
+}

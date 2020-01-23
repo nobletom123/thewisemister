@@ -1,0 +1,12 @@
+.security-page {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  background-color: rgb(119, 188, 32);
+  justify-content: flex-start;
+  text-align: left;
+
+  * {
+    margin-bottom: 1rem;
+  }
+}

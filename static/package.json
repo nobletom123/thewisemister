@@ -1,0 +1,50 @@
+{
+  "name": "noera",
+  "version": "1.0.0",
+  "description": "noera server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "nodemon src/index.js --ext js,graphql --exec babel-node",
+    "index/test": "nodemon index.js --ext js,graphql --exec babel-node",
+    "get-schema": "graphql get-schema -p prisma"
+  },
+  "jest": {
+    "globalSetup": "./tests/jest/globalSetup.js",
+    "globalTeardown": "./tests/jest/globalTeardown.js"
+  },
+  "author": "Tom Noble",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@sendgrid/mail": "^6.4.0",
+    "apollo-boost": "^0.1.14",
+    "aws-sdk": "^2.585.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cookie-universal-nuxt": "^2.0.19",
+    "cross-fetch": "^2.2.2",
+    "env-cmd": "^10.0.1",
+    "express": "^4.17.1",
+    "graphql": "^14.0.2",
+    "graphql-cli": "^2.16.4",
+    "graphql-import": "^0.7.1",
+    "graphql-yoga": "^1.16.7",
+    "jest": "^23.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "node-cron": "^2.0.3",
+    "nodemon": "^1.19.3",
+    "prisma-binding": "^2.1.1",
+    "stripe": "^7.13.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0"
+  }
+}
