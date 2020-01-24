@@ -83,12 +83,13 @@
   &__results-box {
     position: absolute;
     overflow: scroll;
-    max-height: 15rem;
+    max-height: 10rem;
     text-align: center;
-    border: 1px solid grey;
-    border-top: 1px solid grey;
+    border-top: 1px solid $color-grey-light-1;
     background-color: #b0d841;
-    opacity: 0.8;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    opacity: 0.9;
     width: 100%;
     z-index: 1000;
     right: 0;
@@ -100,7 +101,7 @@
 
     @include respond(phone){
       width: 85vw;
-      max-height: 30vh;
+      max-height: 15vh;
     }
 
     * {
@@ -108,10 +109,20 @@
     }
 
     div {
-      border-bottom: 1px solid grey;
+      border-top: 1px solid $color-grey-light-1;
       cursor: pointer;
       bottom: 1;
       left: 10;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      h1 {
+        font-weight: bold;
+        opacity: 1;
+        font-size: 20px;
+      }
 
       &:hover {
         background-color: lightgreen;

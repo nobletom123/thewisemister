@@ -30,7 +30,7 @@
           v-else
           v-for="suggestion in suggestions" v-on:click="chooseDeparturePoint(suggestion)"
           >
-          <h1>{{ suggestion.AirportName }}</h1>
+          <h1>{{ suggestion.AirportName }} - ({{ suggestion.DepCode }})</h1>
         </div>
       </div>
     </div>

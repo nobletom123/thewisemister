@@ -51,19 +51,23 @@
   }
 
   @include respond(tab-land){
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
 
-    &__head__image {
-      padding-right: 1rem 3rem;
+    &__head {
+      flex: 1;
       justify-content: flex-start;
+
+      &__image {
+        padding-right: 1rem 3rem;
+      }
     }
 
     &__menu {
+      flex: 2;
       * {
         padding: 5px 10px;
       }
-
     }
   }
 
