@@ -10,6 +10,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 html {
+  height: 100%;
   font-size: 100%;
 
   @include respond(phone) {
@@ -45,6 +46,7 @@ html {
   @include respond(phone) {
     min-height: -webkit-fill-available;
     max-height: auto;
+    height: 100%;
   }
 
   &.select-depart-date {

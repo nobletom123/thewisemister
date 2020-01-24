@@ -4,6 +4,10 @@
   color: white;
   min-width: 200px;
 
+  @include respond(phone){
+    padding-top: 1rem;
+  }
+
   &__buttons {
     display: flex;
     flex: 1;
@@ -21,6 +25,10 @@
       color: white;
       transition: 0.4s;
       cursor: pointer;
+
+      @include respond(phone){
+        font-size: 30px;
+      }
 
       &:hover {
         color: blue;
