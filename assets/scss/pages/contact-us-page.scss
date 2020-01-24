@@ -28,19 +28,18 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: #fdb913;
-    padding: 2rem;
-    padding: 2rem;
+    padding: 6rem 2rem;
     flex: 1;
     width: 100%;
 
     @include respond(phone){
       flex-direction: column;
-      &--section {
+      &__section {
         padding: 3rem;
       }
     }
 
-    &--section {
+    &__section {
       display: flex;
       flex-direction: column;
       flex: 1;

@@ -19,14 +19,14 @@
       </form>
     </section>
     <section class="contact-us-page__info">
-      <div class="contact-us-page__info--section">
+      <div class="contact-us-page__info__section">
         <div>
           <img src="/contact-clock.png" alt="clock icon">
         </div>
         <h1 class="descriptive-text-small-title">Opening Hours</h1>
         <p class="descriptive-text-information">Our lines open</p>
       </div>
-      <div class="contact-us-page__info--section">
+      <div class="contact-us-page__info__section">
         <div>
           <img src="/contact-mail.png" alt="mail icon">
         </div>
@@ -37,7 +37,7 @@
         <p class="descriptive-text-information">Alpha House, 100 Borough High Street</p>
         <p class="descriptive-text-information">London, SE1 1LB</p>
       </div>
-      <div class="contact-us-page__info--section">
+      <div class="contact-us-page__info__section">
         <div>
           <img src="/contact-phone.png" alt="phone icon">
         </div>

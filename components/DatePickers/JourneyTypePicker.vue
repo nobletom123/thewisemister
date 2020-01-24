@@ -5,14 +5,14 @@
       v-on:click="setJourneyType('return')"
       >
       <h1
-        class="journey-type-picker__selector--title"
+        class="journey-type-picker__selector__title"
       >Return</h1>
       <div
-        class="journey-type-picker__selector--button"
+        class="journey-type-picker__selector__button"
       >
         <div
-          class="journey-type-picker__selector--button-dot"
-          :class="{active: journeyType === 'return'}"
+          class="journey-type-picker__selector__button__dot"
+          :class="{'journey-type-picker__selector__button__dot--active': journeyType === 'return'}"
         >
         </div>
       </div>
@@ -22,14 +22,14 @@
       v-on:click="setJourneyType('single')"
       >
       <h1
-        class="journey-type-picker__selector--title"
+        class="journey-type-picker__selector__title"
       >Single</h1>
       <div
-        class="journey-type-picker__selector--button"
+        class="journey-type-picker__selector__button"
       >
         <div
-          class="journey-type-picker__selector--button-dot"
-          :class="{active: journeyType === 'single'}"
+          class="journey-type-picker__selector__button__dot"
+          :class="{'journey-type-picker__selector__button__dot--active': journeyType === 'single'}"
         >
         </div>
       </div>

@@ -9,7 +9,7 @@
     <div class="who-is-going-page__main-body">
       <PassengerPickerPanel></PassengerPickerPanel>
       <div
-        class="who-is-going-page__main-body--errors-section"
+        class="who-is-going-page__main-body__errors-section"
         >
         <div
           v-if="errors.length > 0"

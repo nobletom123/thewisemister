@@ -15,8 +15,8 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
       class="about-page__info"
     >
       <h1 class="descriptive-text-title">Get in touch</h1>
-      <div class="about-page__info--sections">
-        <div class="about-page__info--sections-section">
+      <div class="about-page__info__sections">
+        <div class="about-page__info__sections__section">
           <div>
             <img src="/about-mail.png"/>
           </div>
@@ -29,7 +29,7 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
             cs@thewisemister.co.uk
           </p>
         </div>
-        <div class="about-page__info--sections-section">
+        <div class="about-page__info__sections__section">
           <div>
             <img src="/about-location.png"/>
           </div>
@@ -48,7 +48,7 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
             cs@thewisemister.co.uk
           </p>
         </div>
-        <div class="about-page__info--sections-section">
+        <div class="about-page__info__sections__section">
           <div>
             <img src="/about-phone.png"/>
           </div>

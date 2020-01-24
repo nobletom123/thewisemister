@@ -1,16 +1,16 @@
 <template>
   <div class="passenger-picker">
-    <div class="passenger-picker--buttons">
-        <i class="fas fa-plus-circle passenger-picker--buttons-icon"
+    <div class="passenger-picker__buttons">
+        <i class="fas fa-plus-circle passenger-picker__buttons__icon"
           v-on:click="increaseAttendence"
         ></i>
-        <i class="fas fa-minus-circle passenger-picker--buttons-icon"
+        <i class="fas fa-minus-circle passenger-picker__buttons__icon"
           v-on:click="decreaseAttendance"
         ></i>
     </div>
-    <div class="passenger-picker--info">
+    <div class="passenger-picker__info">
       <h3 class="form-title-medium">{{quantity}}</h3>
-      <h2 class="form-title-small">{{ passengerTitle }}</h2>
+      <h2 class="form-title-small passenger-picker__info__description">{{ passengerTitle }}</h2>
     </div>
   </div>
 </template>

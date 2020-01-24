@@ -21,7 +21,7 @@
   animation-duration: 0.5s;
 
   @include respond(phone){
-    width: 75vw;
+    width: 85vw;
   }
 
   &__title {
@@ -80,7 +80,7 @@
     }
   }
 
-  &--results-box {
+  &__results-box {
     position: absolute;
     overflow: scroll;
     max-height: 15rem;
@@ -99,7 +99,7 @@
     transition: height 1s;
 
     @include respond(phone){
-      width: 75vw;
+      width: 85vw;
       max-height: 20vh;
     }
 

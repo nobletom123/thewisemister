@@ -13,7 +13,7 @@
     justify-content: space-around;
     flex: 1;
 
-    &--text {
+    &__text {
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -25,7 +25,7 @@
 
     }
 
-    &--images {
+    &__images {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -48,7 +48,7 @@
     flex-direction: row;
     flex: 2;
 
-    &--block {
+    &__block {
       display: flex;
       flex-direction: column;
       flex: 1;

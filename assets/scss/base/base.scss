@@ -1,6 +1,7 @@
 body {
   margin: 0;
   max-height: 100vh;
+  display: flex;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -28,7 +29,7 @@ html {
 }
 
 .container {
-  background-color: orangered;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -39,6 +40,10 @@ html {
   height: 100vh;
   flex: 1;
   margin: 0;
+
+  @include respond(phone) {
+    min-height: -webkit-fill-available;
+  }
 
   &.select-depart-date {
     background-color: rgb(119, 188, 32);

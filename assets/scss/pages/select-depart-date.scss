@@ -1,7 +1,7 @@
 .departure-dates-page {
   background-color: rgb(119, 188, 32);
 
-  &--journey-type-options {
+  &__journey-type-options {
     display: flex;
     flex-direction: row;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  &--journey-date-pickers {
+  &__journey-date-pickers {
     display: flex;
     flex-direction: column;
 

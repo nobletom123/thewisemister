@@ -44,7 +44,8 @@ export default {
     travelPointsSet(){
       return this.$store.getters['departures/travelPointsSet']
     }
-  }
+  },
+  // transition: 'page'
 }
 </script>
 

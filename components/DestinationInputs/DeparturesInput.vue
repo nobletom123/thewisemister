@@ -21,7 +21,7 @@
       <div
         v-if="queryResultsOpen"
         v-click-outside="clickOutside"
-        class="destination-input--results-box"
+        class="destination-input__results-box"
         >
         <h1
           v-if="suggestions.length === 0"

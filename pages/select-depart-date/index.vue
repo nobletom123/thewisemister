@@ -8,7 +8,7 @@
     </h1>
     <JourneyTypePicker>
     </JourneyTypePicker>
-    <div class="departure-dates-page--journey-date-pickers">
+    <div class="departure-dates-page__journey-date-pickers">
       <DatePickerInput
       ></DatePickerInput>
     </div>
