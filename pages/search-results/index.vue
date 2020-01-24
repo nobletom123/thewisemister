@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="page-container search-results-page">
     <div
       v-if="iframeData.errors"
     >
