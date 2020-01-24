@@ -14,7 +14,7 @@
       <div
         class="nav-bar__head__toggle"
         v-on:click="toggleMenu"
-        v-bind:class="{'nav-bar__head_toggle--active': isMenuOpen}"
+        v-bind:class="{'nav-bar__head__toggle--active': isMenuOpen}"
       >
         <i class="fas fa-bars"></i>
       </div>
@@ -40,7 +40,6 @@
         Lines Open: 8:30am - 11:00pm
       </div>
     </div>
-  </div>
   </nav>
 </template>
 

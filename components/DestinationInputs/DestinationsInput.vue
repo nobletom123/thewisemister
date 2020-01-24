@@ -6,7 +6,7 @@
         <input
           v-if="!destinationPoint"
           v-model="query"
-          v-on:input="queryDestinations($event.target.value)"
+          v-on:keydown="queryDestinations($event.target.value)"
           />
         <div
           v-else

@@ -6,7 +6,7 @@
         <input
           v-if="!departurePoint"
           v-model="query"
-          v-on:input="queryDepartures($event.target.value)"
+          v-on:keydown="queryDepartures($event.target.value)"
           />
         <div
           v-else
@@ -28,7 +28,8 @@
         >No results!</h1>
         <div
           v-else
-          v-for="suggestion in suggestions" v-on:click="chooseDeparturePoint(suggestion)">
+          v-for="suggestion in suggestions" v-on:click="chooseDeparturePoint(suggestion)"
+          >
           <h1>{{ suggestion.AirportName }}</h1>
         </div>
       </div>

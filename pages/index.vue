@@ -9,7 +9,6 @@
     <div class="input-fields-vertical home-page__input-elements">
       <DeparturesInput></DeparturesInput>
       <DestinationsInput></DestinationsInput>
-
     </div>
     <div
       class="form-completion-button destinations-btn home-page__complete-button"
@@ -35,6 +34,7 @@ export default {
   },
   methods: {
     completePage(){
+       console.log('test')
       if(this.travelPointsSet){
         this.$router.push('/who-is-going')
       }
