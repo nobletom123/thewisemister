@@ -14,6 +14,7 @@
       title="Inline Frame Example"
       width="100%"
       height="100%"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
       :src="iframeData"
     ></iframe>
   </div>

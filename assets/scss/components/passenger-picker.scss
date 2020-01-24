@@ -6,6 +6,7 @@
 
   @include respond(phone){
     padding-top: 1rem;
+    min-width: 70vw;
   }
 
   &__buttons {
@@ -31,7 +32,7 @@
       }
 
       &:hover {
-        color: blue;
+        color: $color-tertiary-light;
       }
 
       &.inactive {
