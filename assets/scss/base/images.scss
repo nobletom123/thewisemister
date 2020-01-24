@@ -2,10 +2,13 @@
   max-width: 75%;
   height: auto;
 
-  @include respond(phone){
-    max-width: 50%;
-    height: auto;
+  &--phone {
+    @include respond(phone){
+      max-width: 50%;
+      height: auto;
+    }
   }
+
 }
 
 .small-responsive-image {

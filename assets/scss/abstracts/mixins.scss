@@ -12,3 +12,15 @@
     @media (min-width: 112.5em) { @content }
   }
 }
+
+@mixin respond-height($breakpoint){
+  @if $breakpoint == phone {
+    @media (max-height: 75em) { @content }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-height: 112em) { @content }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-height: 112.5em) { @content }
+  }
+}

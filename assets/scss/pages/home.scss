@@ -1,6 +1,20 @@
 .home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
   &__input-elements {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
   }
+
+  &__complete-button {
+    margin-bottom: 1rem;
+  }
+
+
 }

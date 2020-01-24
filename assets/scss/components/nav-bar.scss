@@ -81,19 +81,18 @@
       align-items: center;
 
       &--image {
-        align-self: flex-start;
+        align-self: center;
         flex: 1;
         display: flex;
         justify-content: center;
         height: 100% !important;
-        margin-top: 0.7rem;
       }
 
       &--toggle {
         padding: 0.25rem;
         display: flex;
         border: 1px solid lightgrey;
-        width: auto;
+        width: 3rem;
         border-radius: 8px;
         font-size: 2rem;
         background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);

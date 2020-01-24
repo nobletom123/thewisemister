@@ -2,11 +2,11 @@
   <div class="passenger-picker-panel">
     <PassengerPicker
       passengerType="parents"
-      passengerTitle="Adults"
+      passengerTitle="Adults (12+)"
     ></PassengerPicker>
     <PassengerPicker
       passengerType="minors"
-      passengerTitle="Children"
+      passengerTitle="Children (0-12)"
     ></PassengerPicker>
     <PassengerPicker
       passengerType="infants"

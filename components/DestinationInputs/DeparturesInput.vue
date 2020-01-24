@@ -1,20 +1,20 @@
 <template>
   <div>
     <div class="destination-input">
-      <div class="destination-input--title">
+      <div class="destination-input__title">
         <h1>From:</h1>
         <input
           v-if="!departurePoint"
           v-model="query"
-          v-on:change="queryDepartures"
+          v-on:input="queryDepartures"
           />
         <div
           v-else
-          class="destination-input--title--choice-box"
+          class="destination-input__title__choice-box"
+          v-on:click="removeDeparturePoint"
         >
           <h1> {{ departurePoint.AirportName}} ({{departurePoint.DepCode}})</h1>
           <i
-            v-on:click="removeDeparturePoint"
             class="fas fa-times"></i>
         </div>
       </div>

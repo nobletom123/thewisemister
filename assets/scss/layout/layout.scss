@@ -23,13 +23,18 @@
     padding-top: 145px;
 
     @include respond(phone){
-      padding-top: 10vh;
+      padding: 0;
+      justify-content: center;
     }
   }
 
   &.home-page {
     background-color: $home-page-background;
     padding-bottom: 145px;
+
+    @include respond(phone){
+      padding: 0;
+    }
   }
 
   &.departure-dates-page {
@@ -37,7 +42,8 @@
     padding-top: 2rem;
 
     @include respond(phone){
-      padding-top: 10vh;
+      justify-content: center;
+      padding: 0;
     }
   }
 }
