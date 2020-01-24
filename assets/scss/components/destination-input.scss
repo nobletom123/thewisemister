@@ -17,6 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: fadeInFromBottom;
+  animation-duration: 0.5s;
 
   @include respond(phone){
     width: 75vw;
@@ -94,12 +96,13 @@
     animation-name: expandDownwards;
     animation-duration: 0.6s;
     transform-origin:top;
+    transition: height 1s;
 
     @include respond(phone){
       width: 75vw;
       max-height: 20vh;
     }
-    
+
     * {
       padding: 5px;
     }

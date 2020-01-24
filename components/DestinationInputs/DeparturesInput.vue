@@ -6,7 +6,7 @@
         <input
           v-if="!departurePoint"
           v-model="query"
-          v-on:input="queryDepartures"
+          v-on:input="queryDepartures($event.target.value)"
           />
         <div
           v-else

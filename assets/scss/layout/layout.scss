@@ -30,7 +30,6 @@
 
   &.home-page {
     background-color: $home-page-background;
-    padding-bottom: 145px;
 
     @include respond(phone){
       padding: 0;

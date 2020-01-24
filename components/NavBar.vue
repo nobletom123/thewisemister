@@ -5,22 +5,22 @@
     <!-- HEAD SECTION -->
     <div class="nav-bar__head">
       <nuxt-link
-        class="nav-bar__head--image"
+        class="nav-bar__head__image"
         v-on:click="toggleMenu"
         to="/"
         >
         <img src="/logo.png" class="responsive-image"/>
       </nuxt-link>
       <div
-        class="nav-bar__head--toggle"
+        class="nav-bar__head__toggle"
         v-on:click="toggleMenu"
-        v-bind:class="{active: isMenuOpen}"
+        v-bind:class="{'nav-bar__head_toggle--active': isMenuOpen}"
       >
         <i class="fas fa-bars"></i>
       </div>
     </div>
       <!-- MENU SECTION -->
-    <div class="nav-bar__menu" v-bind:class="{active: isMenuOpen}">
+    <div class="nav-bar__menu" v-bind:class="{'nav-bar__menu--active': isMenuOpen}">
       <nuxt-link
         to="/"
         v-on:click.native="toggleMenu"
