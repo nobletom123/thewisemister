@@ -6,7 +6,7 @@
         <input
           v-if="!destinationPoint"
           v-model="query"
-          v-on:keydown="queryDestinations($event.target.value)"
+          v-on:input="queryDestinations($event.target.value)"
           />
         <div
           v-else
@@ -54,13 +54,13 @@ export default {
     }
   },
   methods: {
-    queryDestinations(){
-      if(this.query !== ''){
+    queryDestinations(data){
+      if(data !== ''){
         this.queryResultsOpen = true
       } else {
         this.queryResultsOpen = false
       }
-      return this.$store.dispatch('departures/queryDestinations', this.query)
+      return this.$store.dispatch('departures/queryDestinations', data)
     },
     chooseDestinationPoint(suggestion){
       this.queryResultsOpen = false
