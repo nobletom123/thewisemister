@@ -28,6 +28,10 @@
     }
   }
 
+  &.search-results-page {
+    background-color: $who-is-going-page-background;
+  }
+
   &.home-page {
     background-color: $home-page-background;
 
@@ -42,7 +46,7 @@
 
     @include respond(phone){
       justify-content: center;
-      padding: 0;
+      padding: 0 4rem;
     }
   }
 }

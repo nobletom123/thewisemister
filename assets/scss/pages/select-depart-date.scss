@@ -1,6 +1,10 @@
 .departure-dates-page {
   background-color: rgb(119, 188, 32);
 
+  @include respond(phone){
+    padding: 2rem 4rem;
+  }
+
   &__journey-type-options {
     display: flex;
     flex-direction: row;
