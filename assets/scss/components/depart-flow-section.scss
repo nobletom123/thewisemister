@@ -1,8 +1,14 @@
 .depart-flow-section {
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
+
+  @include respond(phone){
+    justify-content: center;
+    min-height: 100vh;
+  }
 }
