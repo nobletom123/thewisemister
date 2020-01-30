@@ -15,6 +15,7 @@
     <div
       class="form-completion-button select-depart-date-btn"
       :class="{ active: pageReady }"
+      v-on:click="completePage"
       >See results!</div>
   </div>
 </template>

@@ -42,7 +42,7 @@
 
 <script>
 import DepartFlowSection from '@/components/FlowSections/DepartFlowSection/DepartFlowSection'
-import EditDepartFlowSection from '@/components/FlowSections/DepartFlowSection/EditDepartFlowsection'
+import EditDepartFlowSection from '@/components/FlowSections/DepartFlowSection/EditDepartFlowSection'
 import PassengerFlowSection from '@/components/FlowSections/PassengerFlowSection/PassengerFlowSection'
 import EditPassengerFlowSection from '@/components/FlowSections/PassengerFlowSection/EditPassengerFlowSection'
 import DatesFlowSection from '@/components/FlowSections/DatesFlowSection/DatesFlowSection'
