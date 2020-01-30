@@ -26,6 +26,7 @@
     "sass-loader": "^8.0.2",
     "v-calendar": "^1.0.0-beta.23",
     "v-click-outside": "^3.0.0",
+    "vue-scrollto": "^2.17.1",
     "vuejs-datepicker": "^1.6.2"
   },
   "devDependencies": {

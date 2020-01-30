@@ -34,7 +34,8 @@ export default {
   */
   plugins: [
     { src: '~plugins/v-calendar', ssr: false},
-    { src: "@/plugins/vClickOutside", ssr: false }
+    { src: "@/plugins/vClickOutside", ssr: false },
+    { src: '~plugins/vue-scrollto.js' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,6 +48,7 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
+    'vue-scrollto/nuxt',
   ],
   styleResources: {
    // your settings here

@@ -29,13 +29,13 @@ export default {
   },
   methods: {
     increaseAttendence(){
-      this.$store.dispatch('datastore/amendAttendees', {
+      return this.$store.dispatch('datastore/amendAttendees', {
         group: this.passengerType,
         action: 'increase'}
       )
     },
     decreaseAttendance(){
-      this.$store.dispatch('datastore/amendAttendees', {
+      return this.$store.dispatch('datastore/amendAttendees', {
         group: this.passengerType,
         action: 'decrease'
       })

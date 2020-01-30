@@ -1,10 +1,71 @@
-// .page-enter-active,
-// .page-leave-active {
+// .slide-left-enter-active,
+// .slide-left-leave-active {
 //   transition-property: opacity;
 //   transition-timing-function: ease-in-out;
 //   transition-duration: 400ms;
 // }
-// .page-enter,
-// .page-leave-to {
+// .slide-left-enter,
+// .slide-left-leave-to {
 //   opacity: 0;
 // }
+
+/* during entering and leaving : */
+.slide-left-enter-active, .slide-left-leave-active {
+  width: vw; /*make sur our content keep it's original width*/
+  height: 100%;
+  transition: all .3s ease;
+}
+
+/* entering start */
+.slide-left-enter {
+  left: -100%;
+  opacity: 0;
+}
+
+/* entering end */
+.slide-left-enter-to {
+  left: 0;
+  opacity: 1;
+}
+
+/* leaving start */
+.slide-left-leave {
+  left: 0;
+  opacity: 1;
+}
+
+/* leaving end */
+.slide-left-leave-to {
+  left: 100%;
+  opacity: 0;
+}
+
+.slide-right-enter-active, .slide-right-leave-active {
+  width: vw; /*make sur our content keep it's original width*/
+  height: 100%;
+  transition: all .3s ease;
+}
+
+/* entering start */
+.slide-right-enter {
+  right: -100%;
+  opacity: 0;
+}
+
+/* entering end */
+.slide-right-enter-to {
+  right: 0;
+  opacity: 1;
+}
+
+/* leaving start */
+.slide-right-leave {
+  right: 0;
+  opacity: 1;
+}
+
+/* leaving end */
+.slide-right-leave-to {
+  right: 100%;
+  opacity: 0;
+}

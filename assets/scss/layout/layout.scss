@@ -18,7 +18,6 @@
   width: 100vw;
 
   &.who-is-going-page {
-    background-color: $who-is-going-page-background;
     justify-content: flex-start;
     padding-top: 145px;
 
@@ -29,11 +28,9 @@
   }
 
   &.search-results-page {
-    background-color: $who-is-going-page-background;
   }
 
   &.home-page {
-    background-color: $home-page-background;
 
     @include respond(phone){
       padding: 0;
@@ -41,7 +38,6 @@
   }
 
   &.departure-dates-page {
-    background-color: $departure-date-page-background;
     padding-top: 2rem;
 
     @include respond(phone){

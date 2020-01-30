@@ -1,5 +1,6 @@
 .departure-dates-page {
   background-color: rgb(119, 188, 32);
+  position: relative;
 
   @include respond(phone){
     padding: 2rem 4rem;

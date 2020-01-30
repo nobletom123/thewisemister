@@ -1,5 +1,5 @@
 <template>
-  <main class="page-container departure-dates-page">
+  <div class="dates-section">
     <div>
       <img src="/mob-cal-icon.png"/>
     </div>
@@ -15,21 +15,16 @@
     <div
       class="form-completion-button select-depart-date-btn"
       :class="{ active: pageReady }"
-      v-on:click="completePage"
-      >Okay!</div>
-  </main>
+      >See results!</div>
+  </div>
 </template>
 
 <script>
+var VueScrollTo = require('vue-scrollto');
 import DatePickerInput from '@/components/DatePickers/DatePickerInput';
 import JourneyTypePicker from '@/components/DatePickers/JourneyTypePicker';
 
 export default {
-  head(){
-    return {
-      title: 'Select Journey Dates - TheWiseMister',
-    }
-  },
   computed: {
     journeyType:{
       get(){
@@ -55,17 +50,21 @@ export default {
   },
   components: {
     DatePickerInput,
-    JourneyTypePicker
+    JourneyTypePicker,
   },
   methods: {
     completePage(){
-      this.$router.push('search-results')
+      if(this.pageReady){
+        this.$router.push('search-results')
+      }
+    },
+    scrollTo(){
+      VueScrollTo.scrollTo('.dates-section', 800)
     }
+  },
+  mounted(){
+    this.scrollTo()
   }
 }
 
 </script>
-
-<style>
-
-</style>

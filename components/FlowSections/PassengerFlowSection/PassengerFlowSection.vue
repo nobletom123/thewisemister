@@ -1,5 +1,5 @@
 <template>
-  <main class="page-container who-is-going-page">
+  <div class="passengers-section">
     <div>
       <img src="/who_go.png"/>
     </div>
@@ -23,31 +23,20 @@
         <div
           class="form-completion-button who-is-going-btn"
           :class="{ active: passableQuantity }"
-          v-on:click="completePage"
+          v-on:click="completeSection"
           >Okay!</div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
+var VueScrollTo = require('vue-scrollto');
 import PassengerPickerPanel from '@/components/PassengerPickerPanel/PassengerPickerPanel'
 
 export default {
-  head(){
-    return {
-      title: 'Who Is Going - TheWiseMister',
-    }
-  },
   components: {
-    PassengerPickerPanel
-  },
-  methods: {
-    completePage(){
-      if(this.passableQuantity){
-        this.$router.push('select-depart-date')
-      }
-    }
+    PassengerPickerPanel,
   },
   computed: {
     errors(){
@@ -56,11 +45,20 @@ export default {
     passableQuantity(){
       return this.$store.getters['datastore/passableQuantity']
     }
+  },
+  methods: {
+    completeSection(){
+      if(this.passableQuantity){
+        this.$store.dispatch('flow/completeSection', 1)
+      }
+    },
+    scrollTo(){
+      VueScrollTo.scrollTo('.passengers-section', 800)
+    }
+  },
+  mounted(){
+    this.scrollTo()
   }
 }
 
 </script>
-
-<style>
-
-</style>

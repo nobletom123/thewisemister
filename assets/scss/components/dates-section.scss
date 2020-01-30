@@ -1,0 +1,10 @@
+.dates-section {
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeInFromBottom;
+  animation-duration: 0.5s;
+}
