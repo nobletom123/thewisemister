@@ -23,7 +23,7 @@
       >
       <h1
         class="journey-type-picker__selector__title"
-      >Single</h1>
+      >One way</h1>
       <div
         class="journey-type-picker__selector__button"
       >
