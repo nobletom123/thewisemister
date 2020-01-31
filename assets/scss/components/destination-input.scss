@@ -21,7 +21,10 @@
   animation-duration: 0.5s;
 
   &--mobile-focus {
-    margin-bottom: 6rem;
+
+    @include respond(phone){
+      margin-bottom: 6rem;
+    }
   }
 
   @include respond(phone){

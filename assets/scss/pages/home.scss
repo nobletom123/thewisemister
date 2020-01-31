@@ -13,13 +13,22 @@
     &__destinations-section {
       background: $destinations-section-background;
 
+      .depart-flow-section{
+        height: 100vh;
+      }
+
       &--is-starting {
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+        height: 100%;
 
+        .depart-flow-section{
+          height: 100% !important;
+        }
+
+      }
     }
 
     &__passengers-section {
@@ -33,7 +42,6 @@
 
     &__edit-state {
       min-height: 10rem;
-      max-height: 20rem;
       padding: 10rem 0;
       display: flex;
       flex-direction: column;

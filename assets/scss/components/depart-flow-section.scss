@@ -1,5 +1,4 @@
 .depart-flow-section {
-  height: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -9,6 +8,5 @@
 
   @include respond(phone){
     justify-content: center;
-    min-height: 100vh;
   }
 }
