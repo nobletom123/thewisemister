@@ -20,6 +20,10 @@
   animation-name: fadeInFromBottom;
   animation-duration: 0.5s;
 
+  &--mobile-focus {
+    margin-bottom: 6rem;
+  }
+
   @include respond(phone){
     width: 85vw;
   }

@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div class="destination-input">
+    <div class="destination-input" :class="{'destination-input--mobile-focus': inputFocus}">
       <div class="destination-input__title">
         <h1>To:</h1>
         <input
           v-if="!destinationPoint"
           v-model="query"
           v-on:input="queryDestinations($event.target.value)"
+          @focus="inputFocus = true"
+          @blur="inputFocus = false"
           />
         <div
           v-else
@@ -42,7 +44,8 @@ export default {
   data(){
     return {
       query: null,
-      queryResultsOpen: false
+      queryResultsOpen: false,
+      inputFocus: false
     }
   },
   computed: {

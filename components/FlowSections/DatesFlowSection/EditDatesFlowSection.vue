@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 
 export default {
   computed: {
@@ -57,10 +58,10 @@ export default {
       return this.$store.getters['datastore/getJourneyType']
     },
     departureDate(){
-      return this.$store.getters['datastore/departureDate']
+      return moment(this.$store.getters['datastore/departureDate']).format('MMMM Do YYYY')
     },
     returnDate(){
-      return this.$store.getters['datastore/returnDate']
+      return moment(this.$store.getters['datastore/returnDate']).format('MMMM Do YYYY')
     },
     currentPosition(){
       return this.$store.getters['flow/currentPosition'] === 2
