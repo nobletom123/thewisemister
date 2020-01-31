@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="destination-input" :class="{'destination-input--mobile-focus': inputFocus}"
+    <div class="destination-input" :class="{'destination-input--mobile-focus': queryResultsOpen}"
     >
       <div class="destination-input__title">
         <h1>From:</h1>
@@ -8,8 +8,6 @@
           v-if="!departurePoint"
           v-model="query"
           v-on:input="queryDepartures($event.target.value)"
-          @focus="inputFocus = true"
-          @blur="inputFocus = false"
           />
         <div
           v-else
@@ -48,7 +46,6 @@ export default {
     return {
       query: null,
       queryResultsOpen: false,
-      inputFocus: false
     }
   },
   directives: {
