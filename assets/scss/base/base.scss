@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  height: 100%;
   display: flex;
+  min-height: -webkit-fill-available;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -29,8 +29,14 @@ html {
   }
 }
 
+#__nuxt {
+  display: flex;
+  flex: 1;
+}
+
 #__layout {
-  height: 100%;
+  display: flex;
+  flex: 1;
 }
 
 .container {
@@ -42,9 +48,8 @@ html {
   max-width: 100vw;
   flex: 1;
   margin: 0;
-  height: 100%;
-  max-height: auto;
-  
+  display: flex;
+
   @include respond(phone) {
     min-height: -webkit-fill-available;
     max-height: auto;
