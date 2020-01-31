@@ -3,8 +3,8 @@
     <div
       v-if="iframeData.errors"
     >
-      <h1 class="descriptive-text-title">Unable to display results! There were the following errors:</h1>
-      <p class="descriptive-text-body"
+      <h1 class="descriptive-text-title--error">Unable to display results! There were the following errors:</h1>
+      <p class="descriptive-text-body--error"
         v-for="error of iframeData.errors"
       >{{error.mssg}}</p>
       <nuxt-link to="/">Please click here to create your holiday again</nuxt-link>

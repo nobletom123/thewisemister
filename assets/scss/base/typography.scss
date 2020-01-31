@@ -32,6 +32,12 @@
   font-weight: 600;
   color: #FFF;
 
+  &--error {
+    color: $departure-dates-background;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+
   @include respond(phone){
     text-align: center;
   }
@@ -40,6 +46,11 @@
 .descriptive-text-body {
   font-family: 'ralewayextrabold';
   color: #FFF;
+
+  &--error {
+    color: $departure-dates-background;
+    margin: 0.2rem 0;
+  }
 
   @include respond(phone){
     text-align: center;
