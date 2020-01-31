@@ -44,14 +44,10 @@ html {
   margin: 0;
   height: 100%;
   max-height: auto;
-
+  
   @include respond(phone) {
     min-height: -webkit-fill-available;
     max-height: auto;
     height: 100%;
-  }
-
-  &.select-depart-date {
-    background-color: rgb(119, 188, 32);
   }
 }

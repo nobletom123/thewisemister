@@ -5,6 +5,7 @@
   align-items: center;
   flex-grow: 1;
   height: auto;
+  min-height: -webkit-fill-available;
 
   &__section {
     width: 100vw;
@@ -23,10 +24,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
 
         .depart-flow-section{
-          height: 100%;
+          height: 100% !important;
         }
 
       }
