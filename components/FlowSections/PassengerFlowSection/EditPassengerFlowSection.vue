@@ -3,24 +3,26 @@
     <h1
       class="descriptive-text-title"
     >People travelling</h1>
-    <h1
-      v-if="passengers('parents').quantity > 0"
-      class="home-page__section__edit-state__text descriptive-text-title"
-    >
-      {{passengers('parents').quantity}} {{passengers('parents').noun}}
-    </h1>
-    <h1
-      class="home-page__section__edit-state__text descriptive-text-title"
-      v-if="passengers('minors').quantity > 0"
+    <div class="home-page__section__edit-state__text">
+      <h1
+        v-if="passengers('parents').quantity > 0"
+        class=" descriptive-text-title"
       >
-      {{passengers('minors').quantity}} {{passengers('minors').noun}}
-    </h1>
-    <h1
-      v-if="passengers('infants').quantity > 0"
-      class="home-page__section__edit-state__text descriptive-text-title"
-      >
-      {{passengers('infants').quantity}} {{passengers('infants').noun}}
-    </h1>
+        {{passengers('parents').quantity}} {{passengers('parents').noun}}
+      </h1>
+      <h1
+        class="descriptive-text-title"
+        v-if="passengers('minors').quantity > 0"
+        >
+        {{passengers('minors').quantity}} {{passengers('minors').noun}}
+      </h1>
+      <h1
+        v-if="passengers('infants').quantity > 0"
+        class="descriptive-text-title"
+        >
+        {{passengers('infants').quantity}} {{passengers('infants').noun}}
+      </h1>
+    </div>
     <div
       v-on:click="editSection"
       class="form-completion-button who-is-going-btn"
