@@ -35,7 +35,6 @@ html {
 
 .container {
   background-color: white;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
@@ -44,6 +43,7 @@ html {
   flex: 1;
   margin: 0;
   height: 100%;
+  max-height: auto;
 
   @include respond(phone) {
     min-height: -webkit-fill-available;
