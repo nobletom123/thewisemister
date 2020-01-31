@@ -24,11 +24,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Frequently Asked Questions - TheWiseMister',
-    }
-  },
 }
 
 </script>

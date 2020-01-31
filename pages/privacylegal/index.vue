@@ -83,11 +83,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Privacy and Legal - TheWiseMister',
-    }
-  },
 }
 
 </script>

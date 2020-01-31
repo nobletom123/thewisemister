@@ -29,11 +29,7 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Security - TheWiseMister',
-    }
-  },
+
 }
 
 </script>

@@ -18,11 +18,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Baggage Allowance - TheWiseMister',
-    }
-  },
 }
 
 </script>

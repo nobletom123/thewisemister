@@ -34,7 +34,7 @@
         v-on:click.native="toggleMenu"
         >Contact</nuxt-link>
       <div>
-        Call us 0800 091 2710
+        Call us 0203 011 3470
       </div>
       <div>
         Lines Open: 8:30am - 11:00pm

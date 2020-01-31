@@ -27,11 +27,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Credit Card Policy - TheWiseMister',
-    }
-  },
 }
 
 </script>

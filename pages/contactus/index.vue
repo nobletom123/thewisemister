@@ -21,11 +21,21 @@
         <h1 class="descriptive-text-body">There was an error sending your inquiry. Please try again later, or call us on 0800 091 2710</h1>
       </div>
       <form class="contact-us-form" action="index.html" v-on:submit.prevent="submitQuery" v-else>
-        <input v-model="name" type="text" name="" value="" placeholder="Name" required>
-        <input v-model="surname" type="text" name="" value="" placeholder="Surname" required>
-        <input v-model="phone" type="text" name="" value="" placeholder="Phone" required>
-        <input v-model="email" type="email" name="" value="" placeholder="E-mail" required>
-        <input v-model="subject" type="text" name="" value="" placeholder="Subject" required>
+        <label for="">
+          <input v-model="name" type="text" name="firstName" value="" placeholder="Name" required>
+        </label>
+        <label for="">
+          <input v-model="surname" type="text" name="lastName" value="" placeholder="Surname" required>
+        </label>
+        <label for="">
+          <input v-model="phone" type="text" name="phone" value="" placeholder="Phone" required>
+        </label>
+        <label for="">
+          <input v-model="email" type="email" name="email" value="" placeholder="E-mail" required>
+        </label>
+        <label for="">
+          <input v-model="subject" type="text" name="subject" value="" placeholder="Subject" required>
+        </label>
         <textarea v-model="message" required></textarea>
         <div>
           <button class="form-completion-button active select-depart-date-btn">Okay!</button>
@@ -38,7 +48,8 @@
           <img src="/contact-clock.png" alt="clock icon">
         </div>
         <h1 class="descriptive-text-small-title">Opening Hours</h1>
-        <p class="descriptive-text-information">Our lines open</p>
+        <p class="descriptive-text-information">Our lines open:</p>
+        <p class="descriptive-text-information">8:30am - 11pm</p>
       </div>
       <div class="contact-us-page__info__section">
         <div>
@@ -48,15 +59,19 @@
         <p class="descriptive-text-information">
           You can write to use at the following address
         </p>
-        <p class="descriptive-text-information">Alpha House, 100 Borough High Street</p>
-        <p class="descriptive-text-information">London, SE1 1LB</p>
+        <p class="descriptive-text-information">
+          3 Princes Street,
+        </p>
+        <p class="descriptive-text-information">
+          London, W1B 2LD
+        </p>
       </div>
       <div class="contact-us-page__info__section">
         <div>
           <img src="/contact-phone.png" alt="phone icon">
         </div>
         <h1 class="descriptive-text-small-title">By Telephone</h1>
-        <p class="descriptive-text-information">0208 174 0103</p>
+        <p class="descriptive-text-information">0203 011 3470</p>
       </div>
     </section>
   </main>
@@ -66,11 +81,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Contact Us - TheWiseMister',
-    }
-  },
   computed: {
     name: {
       get(){

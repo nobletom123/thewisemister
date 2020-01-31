@@ -6,7 +6,7 @@
           <img src="/logo.png"/>
         </div>
         <p>
-          Call us 0800 091 2710
+          Call us 0203 011 3470
         </p>
       </div>
       <div class="footer__info-block__images" >

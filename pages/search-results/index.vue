@@ -23,11 +23,6 @@
 <script>
 
 export default {
-  head(){
-    return {
-      title: 'Search Results - TheWiseMister',
-    }
-  },
   computed: {
     iframeData(){
       let iframeData = this.$store.getters['datastore/getIframeData']

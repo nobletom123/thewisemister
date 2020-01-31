@@ -49,11 +49,6 @@ import DatesFlowSection from '@/components/FlowSections/DatesFlowSection/DatesFl
 import EditDatesFlowSection from '@/components/FlowSections/DatesFlowSection/EditDatesFlowSection'
 
 export default {
-  head(){
-    return {
-      title: 'Home - TheWiseMister',
-    }
-  },
   components: {
     DepartFlowSection,
     EditDepartFlowSection,

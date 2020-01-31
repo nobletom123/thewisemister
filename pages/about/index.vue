@@ -22,11 +22,11 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
           </div>
           <h1 class="descriptive-text-small-title">General Enquiries</h1>
           <p class="descriptive-text-information">
-            info@thewisemister.co.uk
+            info@thewisemiser.co.uk
           </p>
           <h1 class="descriptive-text-small-title">After Sales</h1>
           <p class="descriptive-text-information">
-            cs@thewisemister.co.uk
+            cs@thewisemiser.co.uk
           </p>
         </div>
         <div class="about-page__info__sections__section">
@@ -35,17 +35,14 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
           </div>
           <h1 class="descriptive-text-small-title">Address</h1>
           <p class="descriptive-text-information">
-            Alpha House 100
+            3 Princes Street,
           </p>
           <p class="descriptive-text-information">
-            Borough High Street
-          </p>
-          <p class="descriptive-text-information">
-            London, SE1 1LB
+            London, W1B 2LD
           </p>
           <h1 class="descriptive-text-small-title">Opening Hours</h1>
           <p class="descriptive-text-information">
-            cs@thewisemister.co.uk
+            cs@thewisemiser.co.uk
           </p>
         </div>
         <div class="about-page__info__sections__section">
@@ -53,7 +50,7 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
             <img src="/about-phone.png"/>
           </div>
           <h1 class="descriptive-text-small-title">Telephone</h1>
-          <h3 class="descriptive-text-information">+44 208 174 0407</h3>
+          <h3 class="descriptive-text-information">0203 011 3470</h3>
           <h1 class="descriptive-text-small-title">Fax</h1>
           <h3  class="descriptive-text-information">+44 208 711 5934</h3>
         </div>
@@ -68,11 +65,6 @@ All arrangements are covered by ATOL 3448 giving you financial peace of mind.
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'About - TheWiseMister',
-    }
-  },
 }
 
 </script>

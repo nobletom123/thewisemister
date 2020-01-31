@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Cheap Flights Worldwide | The Wise Miser',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'TheWiserMister --description--' }
+      { hid: 'description', name: 'description', content: 'The Wise Miser are experts in finding cheap flights, search and book online.' }
     ],
     script: [
       { src: "https://kit.fontawesome.com/022af6abb5.js", crossorigin: "anonymous"},

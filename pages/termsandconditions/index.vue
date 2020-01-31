@@ -163,11 +163,6 @@
 
 export default {
   layout: 'staticPage',
-  head(){
-    return {
-      title: 'Terms and Conditions - TheWiseMister',
-    }
-  },
 }
 
 </script>
