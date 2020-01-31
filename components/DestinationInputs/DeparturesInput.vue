@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="destination-input" :class="{'destination-input--mobile-focus': queryResultsOpen}"
+    <div class="destination-input"
     >
       <div class="destination-input__title">
         <h1>From:</h1>
