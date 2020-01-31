@@ -15,14 +15,10 @@
       >
         No date selected
       </span>
-    </h1>
-    </div>
-    <div
-      class="home-page__section__edit-state__text"
-      v-if="journeyType === 'return'"
-    >
+      </h1>
       <h1
         class="descriptive-text-small-title"
+        v-if="journeyType === 'return'"
       >To:
         <span
           v-if="returnDate"
@@ -58,10 +54,10 @@ export default {
       return this.$store.getters['datastore/getJourneyType']
     },
     departureDate(){
-      return moment(this.$store.getters['datastore/departureDate']).format('MMMM Do YYYY')
+      return this.$store.getters['datastore/departureDate'] ? moment(this.$store.getters['datastore/departureDate']).format('MMMM Do, YYYY') : 'No date selected'
     },
     returnDate(){
-      return moment(this.$store.getters['datastore/returnDate']).format('MMMM Do YYYY')
+      return this.$store.getters['datastore/returnDate'] ? moment(this.$store.getters['datastore/returnDate']).format('MMMM Do, YYYY') : 'No date selected'
     },
     currentPosition(){
       return this.$store.getters['flow/currentPosition'] === 2

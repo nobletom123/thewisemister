@@ -51,7 +51,12 @@
 
       &__text {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin: 2rem 0;
+
+        h1 {
+          margin: 0.2rem 0;
+        }
       }
     }
 

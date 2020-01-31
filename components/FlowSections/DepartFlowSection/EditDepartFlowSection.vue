@@ -8,12 +8,9 @@
       class="home-page__section__edit-state__text descriptive-text-small-title"
     >
       <h1>From: {{departurePoint.AirportName}} ({{departurePoint.DepCode}})</h1>
-    </div>
-    <div
-      class="home-page__section__edit-state__text descriptive-text-small-title"
-      v-if="destinationPoint"
-    >
-      <h1>From: {{destinationPoint.AirportName}} ({{destinationPoint.code}})</h1>
+      <h1
+        v-if="destinationPoint"
+      >To: {{destinationPoint.AirportName}} ({{destinationPoint.code}})</h1>
     </div>
     <div
       v-on:click="editSection"
